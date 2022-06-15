@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+	
+		<header>
+			<h1><a href="https://erasmus-plus.ec.europa.eu/"><img src= "Erasmus_plus_logo.png" width="250" height="51" alt="ERASMUS+ funded"/> &nbsp "Demain l'ecole" Edu Game</a>
+			</h1>
+		</header>
+
+		<div class="section">
+		
+			<div class="nav">
+				<menu>
+					<br>
+					<li><a href="javascript:restart_game();">Return to start</a></li>
+					<li><a href="Highscores.jpg" target="new">High scores</a></li>
+					<br>
+					<li><p>Your name:</p></li>
+					<li><div id="text_avatar_name" style="background-color: #10173d; color: white; border: 2px solid white; padding: 14px 10px; text-align: center; text-decoration: none;"></div></li>
+					<br>
+					<li><p>Points:</p></li>
+					<li><div id="score" style="background-color: #10173d; color: white; border: 2px solid white; padding: 14px 25px; text-align: center; text-decoration: none;"></div></p></li>
+				</menu>
+			</div>
+			
+			<div class="main">
+				<div id="imgintro" class="center">
+					
+					<p style="text-align:center; color:#10173d; font-size:16px; font-weight: bold;">You have the opportunity to travel abroad for an immersive language course in a language camp.</p>
+
+					<p style="text-align:center; color:#10173d; font-size:16px; font-weight: bold;">You will face diverse challenges throughout the process, from deciding if attending the course at all, how to get the money, and how to face adverse situations.</p>
+
+					<p style="text-align:center; color:#10173d; font-size:16px; font-weight: bold;">Each decision that you take can give you points but you can also lose them if you take a doubtful path.</p>
+
+					<p style="text-align:center; color:#cc0000; font-size:18px; font-weight: bold;">Do you accept the challenge?</p>
+
+				</div>
+	
+				<div id="avatar2" style="text-align:center">
+					<input id="input" type="text"
+						onclick="ClearFields()"
+						onkeypress=input.onkeypress(this)
+						onchange="document.getElementById('text_avatar_name').innerHTML = avatar_name;"
+						onkeydown="document.getElementById('text_avatar_name').innerHTML = avatar_name;"
+						placeholder='Type Your Name and Press Enter'>	
+				</div>
+				
+				<div id="start_game" style="text-align:center;">
+					<br>
+					<button style="text-align: center; font-size:16px; height:40px; width:80%"> Yes, Start the Game!
+					</button>
+				</div>
+				
+				<div id="images">
+				</div><br>
+				
+				<div id="text" style="font-size:120%">
+				</div><br>
+				
+				<div id="buttonBox">
+				</div><br>
+
+				<div id="myModal" class="modal" onclick="badAnswer()">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<p>That's incorrect, sorry.</p>
+					</div>
+				</div>
+
+			</div>
+		
+		</div>
+
+		<footer>
+			<h3>Designed by the students from Kerzourat (France), Saint Pol Roux (France), and Aurel Decei (Romania). Supported by the University of Exeter.</h3>
+		</footer>
+		
+		<script src="functions.js"></script>
+		
+	</body>
+
+</html>
