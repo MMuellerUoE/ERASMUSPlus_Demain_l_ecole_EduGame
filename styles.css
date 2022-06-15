@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+}
+
+a:link, a:visited {
+	background-color: #10173d;
+	color: white;
+	border: 2px solid white; 
+	padding: 8px 8px;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	max-width: 100%;
+	display: inline-block;
+}
+
+a:hover, a:active {
+	background-color: #5c0808;
+}
+
+header {
+	background-color: #10173d;
+	padding: 20px;
+	text-align: center;
+	font-size: 12px;
+	color: white;
+}
+
+.section {
+	display: table;
+	width: 100%;
+	/* content: ""; */
+	/* clear: both; */
+}
+
+.nav {
+	display: table-cell;
+	width: 20%;
+	max-width: 100%;
+	vertical-align: top;
+	background: #172054;
+	padding: 20px;
+	padding-top: 0px;
+	color: white;
+}
+
+.nav menu {
+	list-style-type: none;
+	padding: 0px;
+	font-size: 14px;
+}
+
+.main {
+	display: table-cell;
+	width: 80%;
+	max-width: 100%;
+	vertical-align: top;
+	background: #f1f1f1;
+	padding: 20px;
+}
+
+/* Style the footer */
+footer {
+	float: right;
+	width: 100%;
+	background: #10173d;
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media only screen and (max-width: 800px) {
+  .nav { 
+    display: block;
+    width: 100%;
+  }
+  .main { 
+    display: block;
+    width: 100%;
+  }
+}
+
+body {
+	color: black;
+	background-color: white;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	max-width: 660px;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+images {
+	/* background-size: 100% 100% */
+	/* background-size: cover */
+	/* background-position: center; */
+	/* background-repeat: no-repeat; */
+	/* background-attachment: fixed;  */
+	width: auto;
+	max-width: inherited;
+	height: 100px;
+	/* height: auto; */
+	max-height: 500px;
+	/* margin-top: -1em; */
+	margin-bottom: 15px;
+}
+
+profile {
+    width: 55px;
+    height: 70px;
+    display: inline-block;
+    margin-top: 2%;
+}
+
+input {
+	width: 80%;
+	height: 40px;
+	text-align: center;
+	font-size: 1em;
+	margin-top: 15px;
+}
+input[type=text]:focus {
+	background-color: lightblue;
+	border: 3px solid;
+}
+
+#buttonBox {
+	text-align: center;
+}
+
+button {
+	background-color: lightblue;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 6px;
+	height: 100%;
+	font-size: 14px;
+}
+
+#question{
+    background-color:#136e9c;
+	/*color: #1d3752; */
+	width: 55%;
+	text-align: center;
+	margin: auto; /* center the whole section or box*/
+	clear: both; /* Clear attribute= clears the area of overlapping other stuff, and both= both sides*/
+	font-size: 100%; /* To change the font size on this section*/
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.9); /* To make a drop shadow */
+	padding: 1px;
+}
+
+#question{
+    color: #ffffff; 
+}
+
+/******** Modal popup container for quizzes ***********/
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 300px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	border-radius: 25px;
+	background-color: #cc0000;
+	text-align: center;
+	font-size: 130%;
+	font-weight: bold;
+	color: #fff;
+	margin: auto;
+	padding: 10px;
+	border: none; /* 1px solid #888; */
+	width: 50%;
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/******** NOT NEEDED?! ********/
